@@ -156,3 +156,30 @@ $primary-color: #aa8140;
     height: 324px;
     width: 100%; // color: black;
 }
+
+// Fashion Page Scss Here
+.fashion-sec {
+    .crumb {
+        background: transparent;
+    }
+    .style-block {
+        .style-block__name,
+        .style-block__color {
+            li:first-child {
+                min-width: 18%;
+            }
+        }
+        .style-block__color {
+            li {
+                vertical-align: bottom;
+                span {
+                    width: 22px;
+                    height: 22px;
+                    display: block;
+                    background: #dedede;
+                    border: 1px solid #000;
+                }
+            }
+        }
+    }
+}

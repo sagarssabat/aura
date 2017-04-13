@@ -1,70 +1,49 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
 @font-face {
   font-family: 'raleway';
-  src: url("../fonts/Raleway-Light.ttf");
-}
-
+  src: url("../fonts/Raleway-Light.ttf"); }
 @font-face {
   font-family: 'ralewayThin';
-  src: url("../fonts/Raleway-Thin.ttf");
-}
-
+  src: url("../fonts/Raleway-Thin.ttf"); }
 .marg0 {
-  margin: 0;
-}
+  margin: 0; }
 
 .width100 {
-  width: 100%;
-}
+  width: 100%; }
 
 .padd0 {
-  padding: 0;
-}
+  padding: 0; }
 
 .relate {
-  position: relative;
-}
+  position: relative; }
 
 .display-inblock {
-  display: inline-block;
-}
+  display: inline-block; }
 
 .logo {
-  padding: 50px 0 50px;
-}
-
-.logo .custom-logo {
-  width: 252px;
-  margin: 0 auto;
-}
+  padding: 50px 0 50px; }
+  .logo .custom-logo {
+    width: 252px;
+    margin: 0 auto; }
 
 .home-block {
-  cursor: pointer;
-}
-
-.home-block .home-block__img {
-  margin: 0 auto;
-  filter: grayscale(100%);
-  transition: all ease 2s;
-}
-
-.home-block .home-block__img:hover {
-  filter: grayscale(0);
-  transition: all ease 2s;
-}
-
-.home-block h4 {
-  font-family: raleway;
-  text-align: center;
-  text-transform: uppercase;
-  color: #aa8140;
-  margin: 20px 0;
-}
+  cursor: pointer; }
+  .home-block .home-block__img {
+    margin: 0 auto;
+    filter: grayscale(100%);
+    transition: all ease 2s; }
+    .home-block .home-block__img:hover {
+      filter: grayscale(0);
+      transition: all ease 2s; }
+  .home-block h4 {
+    font-family: raleway;
+    text-align: center;
+    text-transform: uppercase;
+    color: #aa8140;
+    margin: 20px 0; }
 
 .category-sec .padd44 {
-  padding: 0 44px 44px 44px;
-}
-
+  padding: 0 44px 44px 44px; }
 .category-sec .categ-block .categ-block__name {
   position: absolute;
   top: 50%;
@@ -72,14 +51,10 @@
   transform: translate(0%, -50%);
   color: #fff;
   font-family: raleway;
-  text-transform: uppercase;
-}
-
+  text-transform: uppercase; }
 .category-sec .categ-block .categ-block__img {
   margin: 0 auto;
-  filter: grayscale(100%);
-}
-
+  filter: grayscale(100%); }
 .category-sec .categ-block .overlay {
   opacity: 0;
   position: absolute;
@@ -88,65 +63,56 @@
   left: 0;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
-  transition: all ease 2s;
-}
-
+  transition: all ease 2s; }
 .category-sec .categ-block:hover .overlay {
   opacity: 1;
-  transition: all ease 2s;
-}
-
+  transition: all ease 2s; }
 .category-sec .video {
   background: #808080;
-  min-height: 430px;
-}
-
-.category-sec .video .play-center {
-  font-size: 54px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
+  min-height: 430px; }
+  .category-sec .video .play-center {
+    font-size: 54px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
 .category-sec .sec2-minHeight {
-  min-height: 215px;
-}
-
+  min-height: 215px; }
 .category-sec .color-back {
-  background: #aa8141;
-}
-
-.category-sec .color-back h1 {
-  color: #fff;
-  font-family: raleway;
-  margin: 32px 0 0 14px;
-  text-transform: uppercase;
-}
-
+  background: #aa8141; }
+  .category-sec .color-back h1 {
+    color: #fff;
+    font-family: raleway;
+    margin: 32px 0 0 14px;
+    text-transform: uppercase; }
 .category-sec .social {
-  margin: 32px 14px 0 0;
-}
-
-.category-sec .social .social__textlinks li {
-  text-align: right;
-  padding: 2px 0;
-}
-
-.category-sec .social .social__textlinks li a {
-  color: #fff;
-  font-family: raleway;
-  letter-spacing: 2px;
-}
-
-.category-sec .social .social__textlinks li a:hover {
-  text-decoration: none;
-}
+  margin: 32px 14px 0 0; }
+  .category-sec .social .social__textlinks li {
+    text-align: right;
+    padding: 2px 0; }
+    .category-sec .social .social__textlinks li a {
+      color: #fff;
+      font-family: raleway;
+      letter-spacing: 2px; }
+      .category-sec .social .social__textlinks li a:hover {
+        text-decoration: none; }
 
 .video1 {
   height: 324px;
-  width: 100%;
-}
+  width: 100%; }
 
+.fashion-sec .crumb {
+  background: transparent; }
+.fashion-sec .style-block .style-block__name li:first-child,
+.fashion-sec .style-block .style-block__color li:first-child {
+  min-width: 18%; }
+.fashion-sec .style-block .style-block__color li {
+  vertical-align: bottom; }
+  .fashion-sec .style-block .style-block__color li span {
+    width: 22px;
+    height: 22px;
+    display: block;
+    background: #dedede;
+    border: 1px solid #000; }
 
 /*# sourceMappingURL=main.css.map */
