@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43 (38999) - http://www.bohemiancoding.com/sketch -->
+    <title>cd-icon-arrow</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cd-icon-arrow" transform="translate(1.000000, 1.000000)" stroke="#FFFFFF" stroke-width="2">
+            <rect id="Rectangle-path" fill="#E4D8B5" x="0" y="0" width="38" height="38"></rect>
+            <g id="Group" transform="translate(10.000000, 8.000000)">
+                <path d="M9,0 L9,22" id="Shape"></path>
+                <polyline id="Shape" points="0 13 9 22 18 13"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>
