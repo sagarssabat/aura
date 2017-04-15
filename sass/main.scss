@@ -31,6 +31,15 @@ $primary-color: #aa8140;
     display: inline-block;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: raleway;
+}
+
 .logo {
     padding: 50px 0 50px;
     .custom-logo {
@@ -62,7 +71,6 @@ $primary-color: #aa8140;
     }
     cursor: pointer;
     h4 {
-        font-family: raleway;
         text-align: center;
         text-transform: uppercase;
         color: $primary-color;
@@ -116,18 +124,10 @@ $primary-color: #aa8140;
             transform: translate(-50%, -50%);
         }
     }
-    .sec2-minHeight {
-        min-height: 215px;
-        img {
-            // min-height: 159px;
-            // max-height: 159px;
-        }
-    }
     .color-back {
-        background: #aa8141; // min-height: 159px;
+        background: $primary-color; // min-height: 159px;
         h1 {
             color: #fff;
-            font-family: raleway;
             margin: 32px 0 0 14px;
             text-transform: uppercase;
         }
@@ -153,14 +153,15 @@ $primary-color: #aa8140;
 
 // ----------------------------------------------------------
 .video1 {
-    height: 324px;
+    height: 100%;
     width: 100%; // color: black;
 }
 
 // Fashion Page Scss Here
 .fashion-sec {
+    font-family: raleway;
     .crumb {
-        background: transparent;
+        background: transparent; // font-family: raleway;
     }
     .style-block {
         .style-block__name,
@@ -171,7 +172,6 @@ $primary-color: #aa8140;
         }
         .style-block__color {
             li {
-                vertical-align: bottom;
                 span {
                     width: 22px;
                     height: 22px;
@@ -179,7 +179,130 @@ $primary-color: #aa8140;
                     background: #dedede;
                     border: 1px solid #000;
                 }
+                span:nth-child(1) {
+                    background: #f1016c;
+                }
+                span:nth-child(2) {
+                    background: #f97c59;
+                }
             }
+            .color-box {
+                span {
+                    display: inline-block;
+                    vertical-align: bottom;
+                }
+            }
+        }
+    }
+    .bottom-marg {
+        margin-bottom: 40px;
+        h1,
+        h4 {
+            color: $primary-color;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+    }
+}
+
+.customize-btn {
+    font-family: raleway;
+    background: $primary-color;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    width: 20%;
+    &:hover,
+    &:focus,
+    &:active {
+        background: #947138;
+        color: #fff;
+        outline: none;
+    }
+}
+
+.customize-btn.active.focus,
+.customize-btn.active:focus,
+.customize-btn.focus,
+.customize-btn:active.focus,
+.customize-btn:active:focus,
+.customize-btn:focus {
+    outline: none;
+    border-radius: 8px;
+    background: #947138;
+    color: #fff;
+}
+
+// footer css here
+.footer-sec {
+    .footer1 {
+        padding: 44px;
+        .mt80 {
+            margin-top: 80px;
+        }
+    }
+    .footer2 {
+        padding: 0px 44px 22px;
+        .social-icon {
+            li {
+                padding: 0 20px 0 0;
+                a {
+                    color: #fff;
+                    font-size: 30px;
+                }
+            }
+        }
+        p {
+            color: #fff;
+            letter-spacing: 1px;
+            font-family: raleway;
+            a {
+                color: #fff;
+            }
+        }
+    }
+    .footer__submit-btn {
+        @extend .customize-btn;
+        background: #fff;
+        color: $primary-color;
+        width: 30%;
+    }
+    background: $primary-color;
+    h3 {
+        color: #fff;
+        letter-spacing: 1px;
+    }
+    .font-icon {
+        li {
+            position: relative;
+            p {
+                // font-size: 16px;
+                color: #fff;
+                padding: 16px 40px 0;
+                font-family: raleway;
+                a {
+                    color: #fff;
+                }
+            }
+            &:before {
+                font-family: FontAwesome;
+                position: absolute;
+                top: 8px;
+                left: 0;
+                color: #fff;
+                font-size: 26px;
+            }
+        }
+        li:nth-child(1):before {
+            content: '\f041';
+        }
+        li:nth-child(2):before {
+            content: '\f095';
+        }
+        li:nth-child(3):before {
+            content: '\f0e0';
         }
     }
 }

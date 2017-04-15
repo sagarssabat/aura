@@ -20,6 +20,14 @@
 .display-inblock {
   display: inline-block; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: raleway; }
+
 .logo {
   padding: 50px 0 50px; }
   .logo .custom-logo {
@@ -36,7 +44,6 @@
       filter: grayscale(0);
       transition: all ease 2s; }
   .home-block h4 {
-    font-family: raleway;
     text-align: center;
     text-transform: uppercase;
     color: #aa8140;
@@ -76,13 +83,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
-.category-sec .sec2-minHeight {
-  min-height: 215px; }
 .category-sec .color-back {
-  background: #aa8141; }
+  background: #aa8140; }
   .category-sec .color-back h1 {
     color: #fff;
-    font-family: raleway;
     margin: 32px 0 0 14px;
     text-transform: uppercase; }
 .category-sec .social {
@@ -98,21 +102,113 @@
         text-decoration: none; }
 
 .video1 {
-  height: 324px;
+  height: 100%;
   width: 100%; }
 
-.fashion-sec .crumb {
-  background: transparent; }
-.fashion-sec .style-block .style-block__name li:first-child,
-.fashion-sec .style-block .style-block__color li:first-child {
-  min-width: 18%; }
-.fashion-sec .style-block .style-block__color li {
-  vertical-align: bottom; }
+.fashion-sec {
+  font-family: raleway; }
+  .fashion-sec .crumb {
+    background: transparent; }
+  .fashion-sec .style-block .style-block__name li:first-child,
+  .fashion-sec .style-block .style-block__color li:first-child {
+    min-width: 18%; }
   .fashion-sec .style-block .style-block__color li span {
     width: 22px;
     height: 22px;
     display: block;
     background: #dedede;
     border: 1px solid #000; }
+  .fashion-sec .style-block .style-block__color li span:nth-child(1) {
+    background: #f1016c; }
+  .fashion-sec .style-block .style-block__color li span:nth-child(2) {
+    background: #f97c59; }
+  .fashion-sec .style-block .style-block__color .color-box span {
+    display: inline-block;
+    vertical-align: bottom; }
+  .fashion-sec .bottom-marg {
+    margin-bottom: 40px; }
+    .fashion-sec .bottom-marg h1,
+    .fashion-sec .bottom-marg h4 {
+      color: #aa8140;
+      font-weight: 700;
+      margin: 10px 0; }
+
+.customize-btn, .footer-sec .footer__submit-btn {
+  font-family: raleway;
+  background: #aa8140;
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  width: 20%; }
+  .customize-btn:hover, .footer-sec .footer__submit-btn:hover, .customize-btn:focus, .footer-sec .footer__submit-btn:focus, .customize-btn:active, .footer-sec .footer__submit-btn:active {
+    background: #947138;
+    color: #fff;
+    outline: none; }
+
+.customize-btn.active.focus, .footer-sec .active.focus.footer__submit-btn,
+.customize-btn.active:focus,
+.footer-sec .active.footer__submit-btn:focus,
+.customize-btn.focus,
+.footer-sec .focus.footer__submit-btn,
+.customize-btn:active.focus,
+.footer-sec .footer__submit-btn:active.focus,
+.customize-btn:active:focus,
+.footer-sec .footer__submit-btn:active:focus,
+.customize-btn:focus,
+.footer-sec .footer__submit-btn:focus {
+  outline: none;
+  border-radius: 8px;
+  background: #947138;
+  color: #fff; }
+
+.footer-sec {
+  background: #aa8140; }
+  .footer-sec .footer1 {
+    padding: 44px; }
+    .footer-sec .footer1 .mt80 {
+      margin-top: 80px; }
+  .footer-sec .footer2 {
+    padding: 0px 44px 22px; }
+    .footer-sec .footer2 .social-icon li {
+      padding: 0 20px 0 0; }
+      .footer-sec .footer2 .social-icon li a {
+        color: #fff;
+        font-size: 30px; }
+    .footer-sec .footer2 p {
+      color: #fff;
+      letter-spacing: 1px;
+      font-family: raleway; }
+      .footer-sec .footer2 p a {
+        color: #fff; }
+  .footer-sec .footer__submit-btn {
+    background: #fff;
+    color: #aa8140;
+    width: 30%; }
+  .footer-sec h3 {
+    color: #fff;
+    letter-spacing: 1px; }
+  .footer-sec .font-icon li {
+    position: relative; }
+    .footer-sec .font-icon li p {
+      color: #fff;
+      padding: 16px 40px 0;
+      font-family: raleway; }
+      .footer-sec .font-icon li p a {
+        color: #fff; }
+    .footer-sec .font-icon li:before {
+      font-family: FontAwesome;
+      position: absolute;
+      top: 8px;
+      left: 0;
+      color: #fff;
+      font-size: 26px; }
+  .footer-sec .font-icon li:nth-child(1):before {
+    content: '\f041'; }
+  .footer-sec .font-icon li:nth-child(2):before {
+    content: '\f095'; }
+  .footer-sec .font-icon li:nth-child(3):before {
+    content: '\f0e0'; }
 
 /*# sourceMappingURL=main.css.map */
