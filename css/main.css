@@ -100,6 +100,12 @@ h6 {
       letter-spacing: 2px; }
       .category-sec .social .social__textlinks li a:hover {
         text-decoration: none; }
+.category-sec .main-flex {
+  display: flex;
+  flex-wrap: no-wrap;
+  height: 100%; }
+  .category-sec .main-flex .col-flex {
+    flex: 1; }
 
 .video1 {
   height: 100%;

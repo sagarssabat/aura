@@ -148,6 +148,14 @@ h6 {
                 }
             }
         }
+    } // flex css
+    .main-flex {
+        display: flex;
+        flex-wrap: no-wrap;
+        height: 100%;
+        .col-flex {
+            flex: 1;
+        }
     }
 }
 
