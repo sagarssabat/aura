@@ -241,6 +241,7 @@ Main Components
     border: none;
     border-radius: 8px;
     margin-top: 5%;
+    width: 30%;
   }
   .customize-btn:hover {
     background: #947138;
@@ -373,6 +374,7 @@ Main Components
     border: none;
     border-radius: 8px;
     margin-top: 5%;
+    width: auto;
   }
   .logo {
     padding: 50px 0 50px;
