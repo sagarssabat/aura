@@ -102,7 +102,7 @@
 
 @media only screen and (max-width:768px) {
     .category-sec .main-flex {
-        display: block;
+        display: grid;
     }
     .video1 {
         margin-bottom: -5px;
