@@ -101,6 +101,9 @@
 }
 
 @media only screen and (max-width:768px) {
+    .modal-md {
+        width: 80%;
+    }
     .category-sec .main-flex {
         display: grid;
     }

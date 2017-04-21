@@ -390,4 +390,7 @@ Main Components
     width: 180px;
     margin: 0 auto;
   }
+  .cd-half-block p {
+    font-size: 24px;
+  }
 }
