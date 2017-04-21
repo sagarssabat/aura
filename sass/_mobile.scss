@@ -21,6 +21,23 @@
     .crumb li {
         font-size: 10px;
     }
+    .timeline-sec .banner-text {
+        h1 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 14px;
+        }
+    }
+    .cd-timeline-content p {
+        font-size: 14px;
+    }
+    .cd-timeline-content .cd-date {
+        color: #ffffff;
+    }
+    .banner-text-xs {
+        display: none;
+    }
 }
 
 @media only screen and (max-width:992px) {
@@ -64,6 +81,26 @@
     .footer-sec .footer__submit-btn {
         font-size: 12px;
     }
+    .timeline-sec .banner-text {
+        h1 {
+            font-size: 18px;
+        }
+        p {
+            font-size: 10px;
+        }
+    }
+    .footer2 {
+        .social-icon,
+        p {
+            text-align: center;
+        }
+    }
+    .footer-sec .footer2 .social-icon li {
+        padding: 0 8px;
+    }
+    .footer-sec .footer2 p {
+        font-size: 12px;
+    }
 }
 
 @media only screen and (max-width:768px) {
@@ -88,6 +125,19 @@
         margin: 0 !important;
         img {
             width: 100%;
+        }
+    }
+    .banner-text {
+        display: none;
+    }
+    .banner-text-xs {
+        display: block;
+        color: #000;
+        h1 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 10px;
         }
     }
 }
@@ -123,5 +173,36 @@
     .filter-sec .vertical-nav li {
         float: none;
         width: 100%;
+    }
+    .cd-timeline-content h2 {
+        font-size: 16px;
+        margin-top: 0;
+    }
+    .cd-timeline-content p {
+        font-size: 10px;
+    }
+    .cd-timeline-content .cd-date {
+        padding: 0;
+    }
+    .cd-timeline-content .cd-read-more {
+        font-size: 10px;
+    }
+    .cd-timeline-content::before {
+        content: '';
+        top: 12px;
+        border: 8px solid transparent;
+        border-right: 8px solid #aa8140;
+    }
+    #cd-timeline::before {
+        content: ''; // z-index: -1;
+        top: 0;
+    }
+    .timeline-sec {
+        .padd44 {
+            padding: 0 15px;
+        }
+    }
+    .banner-text {
+        display: none;
     }
 }

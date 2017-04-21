@@ -251,7 +251,7 @@ h6 {
   .footer-sec .footer__submit-btn {
     background: #fff;
     color: #aa8140;
-    width: 30%; }
+    width: auto; }
   .footer-sec h3 {
     color: #fff;
     letter-spacing: 1px; }
@@ -434,6 +434,10 @@ h6 {
   .filter-sec .interior a:nth-child(6n+6) {
     margin-left: 25%; }
 
+.maps {
+  width: 100%;
+  height: 350px; }
+
 @media only screen and (max-width: 1200px) {
   .category-sec .social {
     margin: 14px 14px 0 0;
@@ -453,7 +457,21 @@ h6 {
     width: 28%; }
 
   .crumb li {
-    font-size: 10px; } }
+    font-size: 10px; }
+
+  .timeline-sec .banner-text h1 {
+    font-size: 22px; }
+  .timeline-sec .banner-text p {
+    font-size: 14px; }
+
+  .cd-timeline-content p {
+    font-size: 14px; }
+
+  .cd-timeline-content .cd-date {
+    color: #ffffff; }
+
+  .banner-text-xs {
+    display: none; } }
 @media only screen and (max-width: 992px) {
   .women-sec .women-category a,
   .women-sec .men-category a {
@@ -485,6 +503,21 @@ h6 {
 
   .customize-btn, .footer-sec .footer__submit-btn,
   .footer-sec .footer__submit-btn {
+    font-size: 12px; }
+
+  .timeline-sec .banner-text h1 {
+    font-size: 18px; }
+  .timeline-sec .banner-text p {
+    font-size: 10px; }
+
+  .footer2 .social-icon,
+  .footer2 p {
+    text-align: center; }
+
+  .footer-sec .footer2 .social-icon li {
+    padding: 0 8px; }
+
+  .footer-sec .footer2 p {
     font-size: 12px; } }
 @media only screen and (max-width: 768px) {
   .category-sec .main-flex {
@@ -507,7 +540,18 @@ h6 {
     width: 100% !important;
     margin: 0 !important; }
     .filter-sec .interior a img {
-      width: 100%; } }
+      width: 100%; }
+
+  .banner-text {
+    display: none; }
+
+  .banner-text-xs {
+    display: block;
+    color: #000; }
+    .banner-text-xs h1 {
+      font-size: 20px; }
+    .banner-text-xs p {
+      font-size: 10px; } }
 @media only screen and (max-width: 480px) {
   .home-sec {
     padding: 0 44px 44px 44px; }
@@ -537,6 +581,35 @@ h6 {
 
   .filter-sec .vertical-nav li {
     float: none;
-    width: 100%; } }
+    width: 100%; }
+
+  .cd-timeline-content h2 {
+    font-size: 16px;
+    margin-top: 0; }
+
+  .cd-timeline-content p {
+    font-size: 10px; }
+
+  .cd-timeline-content .cd-date {
+    padding: 0; }
+
+  .cd-timeline-content .cd-read-more {
+    font-size: 10px; }
+
+  .cd-timeline-content::before {
+    content: '';
+    top: 12px;
+    border: 8px solid transparent;
+    border-right: 8px solid #aa8140; }
+
+  #cd-timeline::before {
+    content: '';
+    top: 0; }
+
+  .timeline-sec .padd44 {
+    padding: 0 15px; }
+
+  .banner-text {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */

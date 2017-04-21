@@ -347,7 +347,7 @@
                 @extend .customize-btn;
                 background: #fff;
                 color: $primary-color;
-                width: 30%;
+                width: auto;
             }
             background: $primary-color;
             h3 {
@@ -585,5 +585,10 @@
                     margin-left: 25%;
                 }
             }
+        }
+
+        .maps {
+            width: 100%;
+            height: 350px;
         } // ------------------------------------------------------------
         @import "mobile";

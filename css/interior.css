@@ -33,9 +33,9 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "Slabo 27px", serif;
+  font-family: raleway;
   color: #ffffff;
-  background-color: #131d20;
+  /*background-color: #131d20;*/
 }
 
 body::before {
@@ -233,6 +233,27 @@ Main Components
   .customize-btn {
     font-family: raleway;
   }
+  .customize-btn {
+    background: #aa8140;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 5%;
+  }
+  .customize-btn:hover {
+    background: #947138;
+    color: #fff;
+  }
+  .customize-btn:focus {
+    background: #947138;
+    color: #fff;
+  }
+  .customize-btn:active {
+    background: #947138;
+    color: #fff;
+  }
   .interior-logo {
     padding: 0 50px;
   }
@@ -325,5 +346,46 @@ Main Components
 @media only screen and (min-width: 1170px) {
   .cd-vertical-nav {
     display: block;
+  }
+}
+
+@media only screen and (max-width:1200px) {
+  .interior-logo {
+    display: none;
+  }
+  .cd-section:first-of-type .cd-block {
+    height: auto;
+  }
+  .cd-section {
+    padding: 0 44px 44px 44px;
+  }
+  .cd-half-block__content>h4 {
+    text-transform: uppercase;
+    color: #aa8140;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  .customize-btn {
+    background: #aa8140;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 5%;
+  }
+  .logo {
+    padding: 50px 0 50px;
+  }
+  .custom-logo {
+    width: 250px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .custom-logo {
+    width: 180px;
+    margin: 0 auto;
   }
 }

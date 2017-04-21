@@ -180,10 +180,13 @@
                             </form>
                         </div>
                     </div>
-                    <div class="col-md-6 col-md-offset-2">
-                        <div>
+                    <div class="col-md-8">
+                        <div class="hide">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.897036466307!2d72.82671861446546!3d18.93595108716842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1ddef6f0457%3A0xaaa92252acabc83!2sArjun+Rathi+Design!5e0!3m2!1sen!2sin!4v1492242852067"
                                 width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div id="myMap" class="maps ">
+
                         </div>
                     </div>
                 </div>
@@ -212,12 +215,187 @@
                         </p>
                     </div>
                     <div class="col-md-3">
-                        <p class="text-right">Crafted By <a href="">Aavidcode</a></p>
+                        <p class="text-right">Crafted By <a href="http://www.aavidcode.com/">Aavidcode</a></p>
                     </div>
                 </div>
             </div>
         </footer>
     </section>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvQ6uVNTtGmeM6dy11642vAppuqPY1xH0&libraries=places"></script>
+    <script>
+        var map;
+
+        function initialize() {
+            var mapOptions = {
+                zoom: 12,
+                center: new google.maps.LatLng(18.9359511, 72.82890729999997),
+                styles: [{
+                        "featureType": "water",
+                        "elementType": "all",
+                        "stylers": [{
+                                "visibility": "simplified"
+                            },
+                            {
+                                "hue": "#e9ebed "
+                            },
+                            {
+                                "saturation": -78
+                            },
+                            {
+                                "lightness": 67
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "landscape",
+                        "elementType": "all",
+                        "stylers": [{
+                                "visibility": "simplified"
+                            },
+                            {
+                                "hue": "#ffffff "
+                            },
+                            {
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": 100
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "visibility": "simplified"
+                            },
+                            {
+                                "hue": "#bbc0c4 "
+                            },
+                            {
+                                "saturation": -93
+                            },
+                            {
+                                "lightness": 31
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "all",
+                        "stylers": [{
+                                "visibility": "off"
+                            },
+                            {
+                                "hue": "#ffffff "
+                            },
+                            {
+                                "saturation": -100
+                            },
+                            {
+                                "lightness": 100
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "geometry",
+                        "stylers": [{
+                                "visibility": "simplified"
+                            },
+                            {
+                                "hue": "#e9ebed "
+                            },
+                            {
+                                "saturation": -90
+                            },
+                            {
+                                "lightness": -8
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "all",
+                        "stylers": [{
+                                "visibility": "on"
+                            },
+                            {
+                                "hue": "#e9ebed "
+                            },
+                            {
+                                "saturation": 10
+                            },
+                            {
+                                "lightness": 69
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "administrative.locality",
+                        "elementType": "all",
+                        "stylers": [{
+                                "visibility": "on"
+                            },
+                            {
+                                "hue": "#2c2e33 "
+                            },
+                            {
+                                "saturation": 7
+                            },
+                            {
+                                "lightness": 19
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "labels",
+                        "stylers": [{
+                                "visibility": "on"
+                            },
+                            {
+                                "hue": "#bbc0c4 "
+                            },
+                            {
+                                "saturation": -93
+                            },
+                            {
+                                "lightness": 31
+                            }
+                        ]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "labels",
+                        "stylers": [{
+                                "visibility": "simplified"
+                            },
+                            {
+                                "hue": "#bbc0c4 "
+                            },
+                            {
+                                "saturation": -93
+                            },
+                            {
+                                "lightness": -2
+                            }
+                        ]
+                    }
+                ]
+            };
+            map = new google.maps.Map(document.getElementById('myMap'), mapOptions);
+            var marker = new google.maps.Marker({
+                position: new google.maps.LatLng(18.9359511, 72.82890729999997),
+                map: map,
+                title: 'Arjun Rathi',
+                icon: 'img/marker.png'
+            });
+
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
