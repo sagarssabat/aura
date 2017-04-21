@@ -434,6 +434,9 @@ h6 {
   .filter-sec .interior a:nth-child(6n+6) {
     margin-left: 25%; }
 
+.banner-text-xs {
+  display: none; }
+
 .maps {
   width: 100%;
   height: 350px; }
@@ -468,10 +471,7 @@ h6 {
     font-size: 14px; }
 
   .cd-timeline-content .cd-date {
-    color: #ffffff; }
-
-  .banner-text-xs {
-    display: none; } }
+    color: #ffffff; } }
 @media only screen and (max-width: 992px) {
   .women-sec .women-category a,
   .women-sec .men-category a {
