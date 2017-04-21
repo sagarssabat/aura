@@ -1,0 +1,127 @@
+@media only screen and (max-width:1200px) {
+    .category-sec .social {
+        margin: 14px 14px 0 0;
+        font-size: 12px;
+        ul {
+            margin: 0;
+        }
+    }
+    .category-sec .color-back h1 {
+        margin: 8px 0 0 14px;
+        a {
+            font-size: 22px;
+        }
+    }
+    .filter-sec .vertical-nav li a {
+        font-size: 12px;
+    }
+    .fashion-sec .style-btn a {
+        width: 28%;
+    }
+    .crumb li {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    .women-sec {
+        .women-category,
+        .men-category {
+            a {
+                width: 100% !important;
+            }
+            .frame ul {
+                width: 100% !important;
+            }
+            .img-hover {
+                .overlay {
+                    height: 60px;
+                    h4 {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .nav-tabs.nav-justified>li {
+            float: left;
+            display: block;
+            width: 50%;
+        }
+        .crumb {
+            padding: 8px 0;
+        }
+    }
+    .category-sec .social {
+        margin: 10px 14px 0 0;
+    }
+    .category-sec .social .social__textlinks li {
+        padding: 0;
+    }
+    .category-sec .color-back h1 {
+        margin: 0px 0 0 14px;
+    }
+    .customize-btn,
+    .footer-sec .footer__submit-btn {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .category-sec .main-flex {
+        display: block;
+    }
+    .video1 {
+        margin-bottom: -5px;
+    }
+    .filter-sec .vertical-nav li {
+        float: left;
+        margin-bottom: -1px;
+        display: block;
+        width: 33.33%;
+        text-align: center;
+    }
+    .interior {
+        margin-top: 26px;
+    }
+    .filter-sec .interior a {
+        width: 100% !important;
+        margin: 0 !important;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .home-sec {
+        padding: 0 44px 44px 44px;
+    }
+    .logo .custom-logo {
+        width: 180px;
+    }
+    .home-block {
+        margin-bottom: 40px;
+    }
+    .women-modal {
+        padding: 8px;
+        p {
+            font-size: 10px;
+        }
+    }
+    .category-sec .categ-block .categ-block__name h4 {
+        font-size: 12px;
+    }
+    .fashion-sec .style-btn a {
+        float: none !important;
+        display: block;
+        margin-bottom: 10px;
+        width: auto;
+    }
+    .fashion-sec .bottom-marg h1 {
+        font-size: 30px;
+    }
+    .filter-sec .vertical-nav li {
+        float: none;
+        width: 100%;
+    }
+}

@@ -31,6 +31,22 @@ h5,
 h6 {
   font-family: raleway; }
 
+.modal {
+  text-align: center;
+  padding: 0 !important; }
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px; }
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle; }
+
 .logo {
   padding: 50px 0 50px; }
   .logo .custom-logo {
@@ -76,10 +92,10 @@ h6 {
   left: 0;
   height: 100%;
   background: rgba(0, 0, 0, 0.4);
-  transition: all ease 2s; }
+  transition: all .6s ease 0s; }
 .category-sec .categ-block:hover .overlay {
   opacity: 1;
-  transition: all ease 2s; }
+  transition: all .6s ease 0s; }
 .category-sec .video {
   background: #808080;
   min-height: 430px; }
@@ -149,6 +165,8 @@ h6 {
     .fashion-sec .crumb li a:hover,
     .fashion-sec .crumb li a:focus {
       text-decoration: none; }
+  .fashion-sec .style-desc p {
+    text-align: justify; }
   .fashion-sec .style-block .style-block__name li:first-child,
   .fashion-sec .style-block .style-block__color li:first-child {
     min-width: 18%; }
@@ -172,6 +190,10 @@ h6 {
       color: #aa8140;
       font-weight: 700;
       margin: 10px 0; }
+  .fashion-sec .style-btn a {
+    width: 20%; }
+    .fashion-sec .style-btn a .customize-btn, .fashion-sec .style-btn a .footer-sec .footer__submit-btn, .footer-sec .fashion-sec .style-btn a .footer__submit-btn {
+      width: 100%; }
 
 .customize-btn, .footer-sec .footer__submit-btn {
   font-family: raleway;
@@ -207,19 +229,23 @@ h6 {
   background: #aa8140; }
   .footer-sec .footer1 {
     padding: 44px; }
-    .footer-sec .footer1 .mt80 {
-      margin-top: 80px; }
+    .footer-sec .footer1 .mt40 {
+      margin-top: 40px; }
   .footer-sec .footer2 {
-    padding: 0px 44px 22px; }
-    .footer-sec .footer2 .social-icon li {
-      padding: 0 20px 0 0; }
-      .footer-sec .footer2 .social-icon li a {
-        color: #fff;
-        font-size: 30px; }
+    padding: 0px 44px;
+    background: #947138; }
+    .footer-sec .footer2 .social-icon {
+      margin: 8px 0; }
+      .footer-sec .footer2 .social-icon li {
+        padding: 0 20px 0 0; }
+        .footer-sec .footer2 .social-icon li a {
+          color: #fff;
+          font-size: 30px; }
     .footer-sec .footer2 p {
       color: #fff;
       letter-spacing: 1px;
-      font-family: raleway; }
+      font-family: raleway;
+      margin: 18px 0; }
       .footer-sec .footer2 p a {
         color: #fff; }
   .footer-sec .footer__submit-btn {
@@ -263,6 +289,16 @@ h6 {
 .women-sec .nav-tabs > li.active > a:hover {
   background: #aa8140;
   color: #fff; }
+.women-sec .custom-modal {
+  position: relative; }
+  .women-sec .custom-modal .cross-click {
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    width: 24px;
+    opacity: 1; }
+    .women-sec .custom-modal .cross-click:focus {
+      outline: none; }
 .women-sec .women-category,
 .women-sec .men-category {
   margin: 30px -5px 30px -5px; }
@@ -314,16 +350,17 @@ h6 {
     width: 25%; }
   .women-sec .women-category .img-hover,
   .women-sec .men-category .img-hover {
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .women-sec .women-category .img-hover .overlay,
     .women-sec .men-category .img-hover .overlay {
       opacity: 0;
       position: absolute;
-      bottom: 0;
+      bottom: -50%;
       width: 100%;
       height: 80px;
-      background: rgba(170, 129, 64, 0.9);
-      transition: all ease 1s; }
+      background: #aa8140;
+      transition: all .6s ease 0s; }
       .women-sec .women-category .img-hover .overlay h4,
       .women-sec .men-category .img-hover .overlay h4 {
         color: #fff;
@@ -331,11 +368,13 @@ h6 {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        margin: 0; }
+        margin: 0;
+        letter-spacing: 1px; }
     .women-sec .women-category .img-hover:hover .overlay,
     .women-sec .men-category .img-hover:hover .overlay {
       opacity: 1;
-      transition: all ease 1s; }
+      bottom: 0;
+      transition: all .6s ease 0s; }
 .women-sec .frame ul {
   float: left;
   margin-bottom: 0; }
@@ -351,8 +390,10 @@ h6 {
 
 .filter-sec {
   font-family: raleway; }
-  .filter-sec .vertical-nav li {
-    float: none; }
+  .filter-sec .vertical-nav {
+    border: none; }
+    .filter-sec .vertical-nav li {
+      float: none; }
   .filter-sec .vertical-nav li a {
     border-radius: 0;
     color: #fff;
@@ -392,5 +433,110 @@ h6 {
     margin-top: -25%; }
   .filter-sec .interior a:nth-child(6n+6) {
     margin-left: 25%; }
+
+@media only screen and (max-width: 1200px) {
+  .category-sec .social {
+    margin: 14px 14px 0 0;
+    font-size: 12px; }
+    .category-sec .social ul {
+      margin: 0; }
+
+  .category-sec .color-back h1 {
+    margin: 8px 0 0 14px; }
+    .category-sec .color-back h1 a {
+      font-size: 22px; }
+
+  .filter-sec .vertical-nav li a {
+    font-size: 12px; }
+
+  .fashion-sec .style-btn a {
+    width: 28%; }
+
+  .crumb li {
+    font-size: 10px; } }
+@media only screen and (max-width: 992px) {
+  .women-sec .women-category a,
+  .women-sec .men-category a {
+    width: 100% !important; }
+  .women-sec .women-category .frame ul,
+  .women-sec .men-category .frame ul {
+    width: 100% !important; }
+  .women-sec .women-category .img-hover .overlay,
+  .women-sec .men-category .img-hover .overlay {
+    height: 60px; }
+    .women-sec .women-category .img-hover .overlay h4,
+    .women-sec .men-category .img-hover .overlay h4 {
+      font-size: 16px; }
+  .women-sec .nav-tabs.nav-justified > li {
+    float: left;
+    display: block;
+    width: 50%; }
+  .women-sec .crumb {
+    padding: 8px 0; }
+
+  .category-sec .social {
+    margin: 10px 14px 0 0; }
+
+  .category-sec .social .social__textlinks li {
+    padding: 0; }
+
+  .category-sec .color-back h1 {
+    margin: 0px 0 0 14px; }
+
+  .customize-btn, .footer-sec .footer__submit-btn,
+  .footer-sec .footer__submit-btn {
+    font-size: 12px; } }
+@media only screen and (max-width: 768px) {
+  .category-sec .main-flex {
+    display: block; }
+
+  .video1 {
+    margin-bottom: -5px; }
+
+  .filter-sec .vertical-nav li {
+    float: left;
+    margin-bottom: -1px;
+    display: block;
+    width: 33.33%;
+    text-align: center; }
+
+  .interior {
+    margin-top: 26px; }
+
+  .filter-sec .interior a {
+    width: 100% !important;
+    margin: 0 !important; }
+    .filter-sec .interior a img {
+      width: 100%; } }
+@media only screen and (max-width: 480px) {
+  .home-sec {
+    padding: 0 44px 44px 44px; }
+
+  .logo .custom-logo {
+    width: 180px; }
+
+  .home-block {
+    margin-bottom: 40px; }
+
+  .women-modal {
+    padding: 8px; }
+    .women-modal p {
+      font-size: 10px; }
+
+  .category-sec .categ-block .categ-block__name h4 {
+    font-size: 12px; }
+
+  .fashion-sec .style-btn a {
+    float: none !important;
+    display: block;
+    margin-bottom: 10px;
+    width: auto; }
+
+  .fashion-sec .bottom-marg h1 {
+    font-size: 30px; }
+
+  .filter-sec .vertical-nav li {
+    float: none;
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
