@@ -60,7 +60,7 @@
             vertical-align: middle;
         } //END modal css at center of window screen
         .logo {
-            padding: 50px 0 50px;
+            padding: 25px 0 25px;
             .custom-logo {
                 width: 252px;
                 margin: 0 auto;
@@ -102,15 +102,31 @@
         }
 
         .category-sec {
-            .padd44 {
-                padding: 0 44px 44px 44px;
+            .show__colorback {
+                display: none;
+            }
+            .padd30 {
+                padding: 0 30px 30px 30px;
             }
             .categ-block {
                 .categ-block__name {
+                    a {
+                        color: #fff;
+                        img {
+                            width: 30px;
+                        }
+                        &:hover {
+                            text-decoration: none;
+                        }
+                        .display-inblock {
+                            vertical-align: middle;
+                        }
+                    }
                     position: absolute;
                     top: 50%;
                     left: 4%;
-                    transform: translate(0%, -50%);
+                    transform: translate(0%,
+                    -50%);
                     color: #fff;
                     font-family: raleway;
                     text-transform: uppercase;
@@ -219,6 +235,8 @@
             }
             .crumb {
                 background: transparent; // font-family: raleway;
+                margin-bottom: 6px;
+                padding: 8px 0;
                 li>a {
                     color: #000;
                 }

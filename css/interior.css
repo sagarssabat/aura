@@ -23,18 +23,14 @@ Primary style
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
-}
-
 .relate {
   position: relative;
 }
 
 body {
-  font-size: 1.6rem;
+  /*font-size: 1.6rem;*/
   font-family: raleway;
-  color: #ffffff;
+  /*color: #ffffff;*/
   /*background-color: #131d20;*/
 }
 
@@ -115,9 +111,9 @@ Main Components
 }
 
 .cd-section:first-of-type .cd-block {
-  visibility: visible;
+  /*visibility: visible;*/
   height: 100vh;
-  background-color: #263b40;
+  /*background-color: #263b40;*/
 }
 
 @media only screen and (min-width: 1170px) {
@@ -344,6 +340,22 @@ Main Components
   transition: opacity 0.2s 0s, visibility 0s 0.2s;
 }
 
+.mb-view {
+  display: none;
+}
+
+.width100 {
+  width: 100%;
+}
+
+.padd30 {
+  padding: 0 30px 30px 30px;
+}
+
+.section-block {
+  margin-bottom: 50px;
+}
+
 @media only screen and (min-width: 1170px) {
   .cd-vertical-nav {
     display: block;
@@ -351,6 +363,13 @@ Main Components
 }
 
 @media only screen and (max-width:1200px) {
+  .cd-section,
+  .cd-vertical-nav {
+    display: none;
+  }
+  .mb-view {
+    display: block;
+  }
   .interior-logo {
     display: none;
   }
@@ -358,13 +377,16 @@ Main Components
     height: auto;
   }
   .cd-section {
-    padding: 0 44px 44px 44px;
+    padding: 0 30px 30px 30px;
   }
   .cd-half-block__content>h4 {
     text-transform: uppercase;
     color: #aa8140;
     font-weight: 700;
     letter-spacing: 1px;
+  }
+  .cd-half-block__content>p {
+    text-align: justify;
   }
   .customize-btn {
     background: #aa8140;
@@ -373,11 +395,11 @@ Main Components
     font-size: 16px;
     border: none;
     border-radius: 8px;
-    margin-top: 5%;
+    margin-top: 2%;
     width: auto;
   }
   .logo {
-    padding: 50px 0 50px;
+    padding: 25px 0 25px;
   }
   .custom-logo {
     width: 250px;
@@ -391,6 +413,6 @@ Main Components
     margin: 0 auto;
   }
   .cd-half-block p {
-    font-size: 24px;
+    font-size: 14px;
   }
 }

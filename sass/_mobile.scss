@@ -1,13 +1,13 @@
 @media only screen and (max-width:1200px) {
     .category-sec .social {
-        margin: 14px 14px 0 0;
+        margin: 20px 14px 0 0;
         font-size: 12px;
         ul {
             margin: 0;
         }
     }
     .category-sec .color-back h1 {
-        margin: 8px 0 0 14px;
+        margin: 12px 0 0 14px;
         a {
             font-size: 22px;
         }
@@ -66,13 +66,13 @@
         }
     }
     .category-sec .social {
-        margin: 10px 14px 0 0;
+        margin: 12px 14px 0 0;
     }
     .category-sec .social .social__textlinks li {
         padding: 0;
     }
     .category-sec .color-back h1 {
-        margin: 0px 0 0 14px;
+        margin: 2px 0 0 14px;
     }
     .customize-btn,
     .footer-sec .footer__submit-btn {
@@ -101,6 +101,15 @@
 }
 
 @media only screen and (max-width:768px) {
+    .hide__colorback {
+        display: none;
+    }
+    .category-sec .show__colorback {
+        position: relative;
+        display: block;
+        min-height: 65px;
+        border-bottom: 1px inset #fff;
+    }
     .modal-md {
         width: 80%;
     }
@@ -144,7 +153,7 @@
 
 @media only screen and (max-width:480px) {
     .home-sec {
-        padding: 0 44px 44px 44px;
+        padding: 0 30px 30px 30px;
     }
     .logo .custom-logo {
         width: 180px;
@@ -198,7 +207,7 @@
         top: 0;
     }
     .timeline-sec {
-        .padd44 {
+        .padd30 {
             padding: 0 15px;
         }
     }
