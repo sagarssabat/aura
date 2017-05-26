@@ -442,6 +442,9 @@ h6 {
 .banner-text-xs {
   display: none; }
 
+.oops {
+  margin: 0 auto; }
+
 .maps {
   width: 100%;
   height: 350px; }
