@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Embroidary Aura</title>
-
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -29,11 +28,13 @@
                     <li class="breadcrumb-item"><a href="index.html">Interior</a></li>
                     <li class="breadcrumb-item"><a href="demo.html">Interior & Decor</a></li>
                     <li class="breadcrumb-item"><a href="#">Product</a></li>
-
                 </ol>
                 <div class="row">
                     <div class="col-md-5 col-sm-5">
-                        <img src="img/interior/8.jpg" alt="" class="img-responsive">
+                        <div class="over-block">
+                            <!--<img src="img/interior/8.jpg" alt="" class="img-responsive zoom" data-zoom-image="img/interior/8.jpg">-->
+                            <img src="img/interior/cushions/PIX_7880.jpg" alt="" class="img-responsive zoom" data-zoom-image="img/interior/cushions/PIX_7880.jpg">
+                        </div>
                     </div>
                     <div class="col-md-7 col-sm-7">
                         <div class="style-block bottom-marg">
@@ -397,6 +398,17 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src='js/jquery.elevateZoom-3.0.8.min.js'></script>
+    <script>
+        $(".zoom").elevateZoom({
+            zoomType: "inner",
+            cursor: "crosshair",
+            zoomWindowFadeIn: 500,
+            zoomWindowFadeOut: 750,
+            scrollZoomIncrement: 0.9
+            // lensSize: 50,
+        });
+    </script>
     <script src="js/bootstrap.min.js"></script>
 
 </body>
